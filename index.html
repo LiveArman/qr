@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!--Font awesome Link-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+   <!--Animate Css-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+   <!--Custom Css-->
+   <link rel="stylesheet" type="text/css" href="https://drive.google.com/uc?id=1esIxS1eIoiy7c0tnKScj_hZ9qSMUQ4SJ">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700' rel='stylesheet' type='text/css'>
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+<body>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+<!----------QR--------->
+<div class="card-panel red darken-1">
+
+ <p class="flow-text center">
+   <i class="fas fa-cog fa-spin"></i>
+   Generate QR
+ </p>
+
+<!----First Row--------->
+<div class="row col xl12 l12 m12 s12">
+ 
+<div class="input-field col xl5 l12 m12 s12">
+ <textarea row="42" id="text" class="browser-default1" placeholder="Type Text"></textarea>
+</div>
+
+<div class="input-field col xl5 l12 m12 s12 offset-xl1">
+ <select id="size" class="browser-default" onchange="setChartImage()">
+   <option value="50x50" selected>50x50</option>
+       <option value="75x75">75x75</option>
+       <option value="100x100">100x100</option>
+       <option value="150x150">150x150</option>
+       <option value="300x300">300x300</option>
+ </select>
+</div>
+
+
+</div>
+<!---end of First row---->
+
+<div class="row col xl12 l12 m12 s12"><!---Second row---->
+ 
+<div class="input-field col xl5 l12 m12 s12" style="margin-top: 2px;">
+ <select id="ec" onchange="setChartImage()" class="browser-default">
+   <option value="L">Error correction</option>
+   <option value="M">15%</option>
+   <option value="Q">25%</option>
+   <option value="H">30%</option>
+ </select>
+</div>
+
+
+<div class="col xl5 l12 m12 s12 offset-xl1">
+ <button data-theme="b" onclick="setChartImage()" class="btn waves-effect waves-light col xl12 l12 m12 s12">Generate</button>
+</div>
+
+</div>
+<!--end of second row------>
+
+<div class="row col xl12 l12 m12 s12"><!--Third row--->
+ <p class="flow-text center">
+   <i class="fas fa-cloud-download-alt"></i>
+   Download QR
+ </p>
+
+
+<div class="col xl6 l6 m12 s12 offset-xl3 offset-l3">
+ <a href="#" id="link">
+   <img id="chart" src="assets/media/qr.png" alt="QR code">
+ </a>
+</div>
+
+
+<div class="input-field col xl6 l6 m12 s12 offset-xl3 offset-l3">
+ <textarea id="url" placeholder="Click To Copy....." readonly="readonly"
+ class="browser-default1 colorChange copyClick" onclick="focus(); select();"></textarea>
+</div>
+
+
+</div>
+<!--end of Third row--->
+
+
+</div><!--Main div------>
+
+</main>
+
+
+
+      <!--Jquery Cdn Link-->
+      <script
+ src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+ integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+ crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+   <script type="text/javascript" src="https://drive.google.com/uc?id=1asBmYH0lmmTYsYUQUT3kKKowYcQDxj2n"></script>
+   <script type="text/javascript" src="https://drive.google.com/uc?id=1kaRrBfi8TOuA_o3-tX6a-4j2iEcv0wv6"></script>
+
+   </body>
+ </html>
+ 
